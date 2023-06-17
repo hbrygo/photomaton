@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* color: white; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.bg{
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.bg-logo > img{
+
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.main-container{
+  display: flex;
+  justify-content: safe center; 
+  align-items: safe center;
+  flex-direction: column;
+  height: inherit;
+}
+
+.flip{
+  transform: scaleX(-1);
+}
+
+.blink_me {
+  animation: blinker 500ms linear infinite;
+}
+
+.shoot-button-container{
+  margin: 4rem;
+}
+
+.shoot-button-container >
+Button{
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  font-size: 9rem;
+  background-color: #fff;
+  border: none;
+}
+
+.counter-container {
+  position: absolute;
+  color: white;
+  top: 18%;
+  font-size: 10rem;
+  border: none;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview-container-parent{
+  top: 70%;
+  position: absolute;
+  max-height: 36rem;
+  overflow: hidden;
+  overflow-y: scroll;
+
+}
+.preview-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.image-element {
+  margin: 1rem;
+  text-align: center;
+}
+
+.image-element img {
+  width: 20rem;
+  transform: scaleX(-1);
+}
+
+.preview-pic-container {
+  width: 885.333px;
+  height: 498px;
+}
+
+
+.bg-flash {
+  background-image: none;
+  background-color: white;
+}
+
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
